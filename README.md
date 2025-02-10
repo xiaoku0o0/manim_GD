@@ -2,7 +2,7 @@
 
 This project contains the code used to generate the gradient descent demo video. All open source content can be used without application or attribution under the CC0.
 
-[![CC0][cc0-image]][cc-by-nc-sa]
+[![cc0][cc0-image]][cc0]
 
 [cc0]: https://creativecommons.org/public-domain/cc0/
 [cc0-image]: https://licensebuttons.net/p/zero/1.0/88x31.png
