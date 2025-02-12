@@ -11,33 +11,26 @@
 
 ## 分镜表与代码清单
 
-> [!NOTE]
->
-> **分镜表已在html文件中给出，部分md解析器不支持嵌入html。**
-
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
     </head>
     <style type="text/css">
-        td{
-            background-color: rgb(240,237,255);
-        }
-        thead{
-            color: rgb(240,237,255);
-            background-color: rgb(70,69,85);
-        }
+        body{margin: 0;}
+        #table1 tbody tr:hover {
+        background-color: rgb(226, 230, 255);
+    }
     </style>
     <body>
-        <table id="table1" width="90%" border="1px" style="border-collapse: collapse;" align="center">
-            <caption><h3>manim镜头分镜设计表</h3></caption>
+        <table id="table1" width="99%" border="1px" style="border-collapse: collapse;" align="center">
+            <caption>manim镜头分镜设计表</caption>
             <thead>
-                <th align="center">镜号</th>
-                <th align="center">开始时间<br>(时:分:秒:帧)</th>
-                <th align="center">镜头</th>
-                <th align="center" colspan="2">画面描述</th>
-                <th align="center">文件名</th>
-                <th align="center">py类名</th>
+                <td align="center">镜号</td>
+                <td align="center">开始时间<br>时:分:秒:帧</td>
+                <td align="center">镜头</td>
+                <td align="center" colspan="2">画面描述</td>
+                <td align="center">文件名</td>
+                <td align="center">py类名</td>
             </thead>
             <tbody>
                 <!-- M1 -->
@@ -255,4 +248,20 @@
             </tbody>
         </table>
     </body>
+
+## 渲染命令
+
+```
+manim S1.py M1
+```
+
+其中，S1.py为文件名，M1为类名
+
+亦可在该文件下补充以下代码，直接运行文件：
+
+```python
+if __name__ == '__main__':
+    import os
+    os.system('manim S1.py M1')
+```
 
